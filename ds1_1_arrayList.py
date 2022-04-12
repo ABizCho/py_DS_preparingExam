@@ -1,5 +1,5 @@
 '''
-1. List based on array
+List based on array
 
   * List의 특징 :
     - 순서가 있고 중복을 허용하는 items의 collection
@@ -53,14 +53,15 @@
         - insert( pos, elem ) : O(n)
         - pop( pos ) : O(n)
 ''' 
-from asyncio.windows_events import NULL
 
+from asyncio.windows_events import NULL
 
 class ArrayList : 
   def __init__( self ) :
     self.items = []
 
   def insert(self, elem, pos) :
+    
     # self.items.insert(pos,elem)
     self.items.append(NULL)
     for i in range(len(self.items)-2,pos-1,-1):
